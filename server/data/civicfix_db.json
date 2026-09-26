@@ -1,0 +1,791 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin Officer",
+      "email": "admin@civicfix.gov",
+      "password_hash": "$2a$10$Miw0RWPh0DhYg8E3GKXmQOW.zLTx7r7GI8Gxv4sBX3KMeBpJ4st.2",
+      "role": "ADMIN",
+      "department": "Municipal Administration",
+      "created_at": "2026-08-27T14:20:22.410Z"
+    },
+    {
+      "id": 2,
+      "name": "Priya Nair (Electrical Officer)",
+      "email": "officer.electrical@civicfix.gov",
+      "password_hash": "$2a$10$Miw0RWPh0DhYg8E3GKXmQOW.zLTx7r7GI8Gxv4sBX3KMeBpJ4st.2",
+      "role": "OFFICER",
+      "department": "Electrical Department",
+      "created_at": "2026-08-27T14:20:22.410Z"
+    },
+    {
+      "id": 3,
+      "name": "David Chen (Roads Supervisor)",
+      "email": "officer.roads@civicfix.gov",
+      "password_hash": "$2a$10$Miw0RWPh0DhYg8E3GKXmQOW.zLTx7r7GI8Gxv4sBX3KMeBpJ4st.2",
+      "role": "OFFICER",
+      "department": "Roads & Infrastructure",
+      "created_at": "2026-08-27T14:20:22.410Z"
+    },
+    {
+      "id": 4,
+      "name": "John Doe (Citizen)",
+      "email": "citizen@example.com",
+      "password_hash": "$2a$10$IDy0QHMg5WtaJ6V2ZVyeruAx1hrPrXcfRe2wnIcoXHHLGfZoSVSYm",
+      "role": "CITIZEN",
+      "department": null,
+      "created_at": "2026-09-01T14:20:22.410Z"
+    },
+    {
+      "id": 5,
+      "name": "Sarah Jenkins",
+      "email": "sarah.citizen@example.com",
+      "password_hash": "$2a$10$IDy0QHMg5WtaJ6V2ZVyeruAx1hrPrXcfRe2wnIcoXHHLGfZoSVSYm",
+      "role": "CITIZEN",
+      "department": null,
+      "created_at": "2026-09-06T14:20:22.410Z"
+    },
+    {
+      "id": 6,
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "password_hash": "$2a$10$IDy0QHMg5WtaJ6V2ZVyeruAx1hrPrXcfRe2wnIcoXHHLGfZoSVSYm",
+      "role": "CITIZEN",
+      "department": null,
+      "created_at": "2026-09-11T14:20:22.410Z"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 17,
+      "complaint_code": "CIV-2026-0017",
+      "user_id": 4,
+      "description": "Streetlight near my college has been broken for 2 weeks.",
+      "summary": "Streetlight near my college has been broken for 2 weeks.",
+      "category": "Infrastructure",
+      "subcategory": "Streetlight",
+      "priority": "MEDIUM",
+      "department": "Electrical Department",
+      "status": "RESOLVED",
+      "latitude": 12.971598,
+      "longitude": 77.594562,
+      "address": "42 College Road, Near North Gate, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-26T16:41:05.027Z",
+      "updated_at": "2026-09-26T16:41:05.148Z",
+      "resolved_at": "2026-09-26T16:41:05.148Z"
+    },
+    {
+      "id": 1,
+      "complaint_code": "CIV-2026-0001",
+      "user_id": 4,
+      "description": "Streetlight near City College campus gate has been completely broken for 2 weeks, causing dark spots and safety concerns for night students.",
+      "summary": "Broken streetlight near City College gate.",
+      "category": "Infrastructure",
+      "subcategory": "Streetlight",
+      "priority": "MEDIUM",
+      "department": "Electrical Department",
+      "status": "IN PROGRESS",
+      "latitude": 12.971598,
+      "longitude": 77.594562,
+      "address": "42 College Road, Near North Gate, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-12T14:20:22.410Z",
+      "updated_at": "2026-09-24T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 2,
+      "complaint_code": "CIV-2026-0002",
+      "user_id": 5,
+      "description": "Dangerous deep pothole on MG Road near Metro Pillar 142. Two two-wheelers skidded yesterday during rain.",
+      "summary": "Severe crater pothole near Metro Pillar 142.",
+      "category": "Roads & Infrastructure",
+      "subcategory": "Pothole",
+      "priority": "HIGH",
+      "department": "Roads & Infrastructure",
+      "status": "ASSIGNED",
+      "latitude": 12.97542,
+      "longitude": 77.60831,
+      "address": "MG Road, Opposite Metro Station, East Ward",
+      "image_url": null,
+      "created_at": "2026-09-21T14:20:22.410Z",
+      "updated_at": "2026-09-23T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 3,
+      "complaint_code": "CIV-2026-0003",
+      "user_id": 6,
+      "description": "Huge municipal garbage container overflowing for 4 days. Waste spilled onto footpath attracting stray animals and foul smell.",
+      "summary": "Garbage overflow in Market Square.",
+      "category": "Sanitation",
+      "subcategory": "Garbage Overflow",
+      "priority": "MEDIUM",
+      "department": "Sanitation Department",
+      "status": "RESOLVED",
+      "latitude": 12.96985,
+      "longitude": 77.58941,
+      "address": "12 Market Square, Near Gandhi Circle, West Ward",
+      "image_url": null,
+      "created_at": "2026-09-16T14:20:22.410Z",
+      "updated_at": "2026-09-25T14:20:22.410Z",
+      "resolved_at": "2026-09-25T14:20:22.410Z"
+    },
+    {
+      "id": 4,
+      "complaint_code": "CIV-2026-0004",
+      "user_id": 4,
+      "description": "High pressure municipal water pipe burst flooding the entire residential lane and wasting drinking water continuously.",
+      "summary": "Burst water supply pipe flooding residential lane.",
+      "category": "Water Supply",
+      "subcategory": "Water Leakage",
+      "priority": "HIGH",
+      "department": "Water Supply Department",
+      "status": "RESOLVED",
+      "latitude": 12.9782,
+      "longitude": 77.5921,
+      "address": "Lane 4, Green Park Colony, North Ward",
+      "image_url": null,
+      "created_at": "2026-09-18T14:20:22.410Z",
+      "updated_at": "2026-09-23T14:20:22.410Z",
+      "resolved_at": "2026-09-23T14:20:22.410Z"
+    },
+    {
+      "id": 5,
+      "complaint_code": "CIV-2026-0005",
+      "user_id": 5,
+      "description": "Open sewage manhole cover broken near Primary School. Extremely dangerous for small children walking to school.",
+      "summary": "Uncovered dangerous manhole near primary school.",
+      "category": "Public Works",
+      "subcategory": "Drainage & Sewage",
+      "priority": "HIGH",
+      "department": "Public Works Department",
+      "status": "IN PROGRESS",
+      "latitude": 12.97341,
+      "longitude": 77.6012,
+      "address": "School Road, Near St. Anne School, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-23T14:20:22.410Z",
+      "updated_at": "2026-09-25T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 6,
+      "complaint_code": "CIV-2026-0006",
+      "user_id": 6,
+      "description": "Traffic signal at Brigade Junction stuck on red in all directions, causing massive 2km traffic jam during morning peak hours.",
+      "summary": "Traffic signal failure at major Brigade Junction.",
+      "category": "Traffic Management",
+      "subcategory": "Traffic Signal",
+      "priority": "HIGH",
+      "department": "Traffic Department",
+      "status": "RESOLVED",
+      "latitude": 12.9723,
+      "longitude": 77.6071,
+      "address": "Brigade Road Junction, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-20T14:20:22.410Z",
+      "updated_at": "2026-09-24T14:20:22.410Z",
+      "resolved_at": "2026-09-24T14:20:22.410Z"
+    },
+    {
+      "id": 7,
+      "complaint_code": "CIV-2026-0007",
+      "user_id": 4,
+      "description": "Streetlight pole tilted and sparking occasionally near residential society entrance during wind.",
+      "summary": "Sparking and tilted streetlight pole.",
+      "category": "Infrastructure",
+      "subcategory": "Streetlight",
+      "priority": "HIGH",
+      "department": "Electrical Department",
+      "status": "ASSIGNED",
+      "latitude": 12.9768,
+      "longitude": 77.5985,
+      "address": "Sunrise Apartments, 8th Main, South Ward",
+      "image_url": null,
+      "created_at": "2026-09-24T14:20:22.410Z",
+      "updated_at": "2026-09-25T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 8,
+      "complaint_code": "CIV-2026-0008",
+      "user_id": 5,
+      "description": "Three continuous potholes forming a trench along 100 Feet Road right after the bus terminal.",
+      "summary": "Multiple road potholes near bus terminal.",
+      "category": "Roads & Infrastructure",
+      "subcategory": "Pothole",
+      "priority": "MEDIUM",
+      "department": "Roads & Infrastructure",
+      "status": "IN PROGRESS",
+      "latitude": 12.9812,
+      "longitude": 77.611,
+      "address": "100 Feet Road, Near Bus Terminal, East Ward",
+      "image_url": null,
+      "created_at": "2026-09-22T14:20:22.410Z",
+      "updated_at": "2026-09-25T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 9,
+      "complaint_code": "CIV-2026-0009",
+      "user_id": 6,
+      "description": "Commercial market dumping untreated organic waste into open stormwater drain, clogging flow.",
+      "summary": "Drainage blocked due to commercial dumping.",
+      "category": "Public Works",
+      "subcategory": "Drainage & Sewage",
+      "priority": "MEDIUM",
+      "department": "Public Works Department",
+      "status": "AI ANALYZED",
+      "latitude": 12.9681,
+      "longitude": 77.5928,
+      "address": "Old Market Lane, West Ward",
+      "image_url": null,
+      "created_at": "2026-09-25T14:20:22.410Z",
+      "updated_at": "2026-09-26T02:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 10,
+      "complaint_code": "CIV-2026-0010",
+      "user_id": 4,
+      "description": "Water supply pipeline leaking underground causing asphalt swelling and damp road surface.",
+      "summary": "Underground water pipeline leak.",
+      "category": "Water Supply",
+      "subcategory": "Water Leakage",
+      "priority": "LOW",
+      "department": "Water Supply Department",
+      "status": "REPORTED",
+      "latitude": 12.9749,
+      "longitude": 77.5873,
+      "address": "5th Cross, Malleshwaram, North Ward",
+      "image_url": null,
+      "created_at": "2026-09-25T20:20:22.410Z",
+      "updated_at": "2026-09-25T20:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 11,
+      "complaint_code": "CIV-2026-0011",
+      "user_id": 5,
+      "description": "Pedestrian zebra crossing paint completely faded and signal countdown timer display broken.",
+      "summary": "Faded pedestrian zebra crossing and broken timer.",
+      "category": "Traffic Management",
+      "subcategory": "Traffic Signal",
+      "priority": "LOW",
+      "department": "Traffic Department",
+      "status": "RESOLVED",
+      "latitude": 12.9705,
+      "longitude": 77.6042,
+      "address": "Koramangala 4th Block Signal, South Ward",
+      "image_url": null,
+      "created_at": "2026-09-14T14:20:22.410Z",
+      "updated_at": "2026-09-21T14:20:22.410Z",
+      "resolved_at": "2026-09-21T14:20:22.410Z"
+    },
+    {
+      "id": 12,
+      "complaint_code": "CIV-2026-0012",
+      "user_id": 6,
+      "description": "Public park perimeter light fixtures vandalized, non-functional for past one week.",
+      "summary": "Park pathway light fixtures non-functional.",
+      "category": "Infrastructure",
+      "subcategory": "Streetlight",
+      "priority": "LOW",
+      "department": "Electrical Department",
+      "status": "IN PROGRESS",
+      "latitude": 12.9771,
+      "longitude": 77.6034,
+      "address": "Cubbon Park South Gate, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-19T14:20:22.410Z",
+      "updated_at": "2026-09-24T14:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 13,
+      "complaint_code": "CIV-2026-0013",
+      "user_id": 4,
+      "description": "Waste pickup truck missed collection for 3 consecutive days in Sector 3 residential area.",
+      "summary": "Residential waste collection missed.",
+      "category": "Sanitation",
+      "subcategory": "Garbage Overflow",
+      "priority": "MEDIUM",
+      "department": "Sanitation Department",
+      "status": "RESOLVED",
+      "latitude": 12.9825,
+      "longitude": 77.596,
+      "address": "Sector 3 Layout, North Ward",
+      "image_url": null,
+      "created_at": "2026-09-17T14:20:22.410Z",
+      "updated_at": "2026-09-22T14:20:22.410Z",
+      "resolved_at": "2026-09-22T14:20:22.410Z"
+    },
+    {
+      "id": 14,
+      "complaint_code": "CIV-2026-0014",
+      "user_id": 5,
+      "description": "Exposed high tension electrical cable laying across pedestrian sidewalk after storm.",
+      "summary": "Exposed high-voltage electrical cable on sidewalk.",
+      "category": "Infrastructure",
+      "subcategory": "Electrical Hazard",
+      "priority": "HIGH",
+      "department": "Electrical Department",
+      "status": "RESOLVED",
+      "latitude": 12.9719,
+      "longitude": 77.5991,
+      "address": "Church Street Walkway, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-15T14:20:22.410Z",
+      "updated_at": "2026-09-19T14:20:22.410Z",
+      "resolved_at": "2026-09-19T14:20:22.410Z"
+    },
+    {
+      "id": 15,
+      "complaint_code": "CIV-2026-0015",
+      "user_id": 6,
+      "description": "Storm drain overflow flooding ground floor residences after moderate evening rain.",
+      "summary": "Stormwater drain overflowing into houses.",
+      "category": "Public Works",
+      "subcategory": "Drainage & Sewage",
+      "priority": "HIGH",
+      "department": "Public Works Department",
+      "status": "ASSIGNED",
+      "latitude": 12.9692,
+      "longitude": 77.5954,
+      "address": "Lakeview Layout, South Ward",
+      "image_url": null,
+      "created_at": "2026-09-25T02:20:22.410Z",
+      "updated_at": "2026-09-26T04:20:22.410Z",
+      "resolved_at": null
+    },
+    {
+      "id": 16,
+      "complaint_code": "CIV-2026-0016",
+      "user_id": 4,
+      "description": "Lamp post opposite College Gate 2 blinking continuously then completely turning off.",
+      "summary": "Streetlight flickering and turning off near College.",
+      "category": "Infrastructure",
+      "subcategory": "Streetlight",
+      "priority": "MEDIUM",
+      "department": "Electrical Department",
+      "status": "ASSIGNED",
+      "latitude": 12.9717,
+      "longitude": 77.5947,
+      "address": "46 College Road, Gate 2, Central Ward",
+      "image_url": null,
+      "created_at": "2026-09-23T14:20:22.410Z",
+      "updated_at": "2026-09-25T14:20:22.410Z",
+      "resolved_at": null
+    }
+  ],
+  "complaint_keywords": [
+    {
+      "id": 1,
+      "complaint_id": 1,
+      "keyword": "streetlight"
+    },
+    {
+      "id": 2,
+      "complaint_id": 1,
+      "keyword": "college"
+    },
+    {
+      "id": 3,
+      "complaint_id": 1,
+      "keyword": "broken"
+    },
+    {
+      "id": 4,
+      "complaint_id": 1,
+      "keyword": "night"
+    },
+    {
+      "id": 5,
+      "complaint_id": 1,
+      "keyword": "visibility"
+    },
+    {
+      "id": 6,
+      "complaint_id": 2,
+      "keyword": "pothole"
+    },
+    {
+      "id": 7,
+      "complaint_id": 2,
+      "keyword": "mg road"
+    },
+    {
+      "id": 8,
+      "complaint_id": 2,
+      "keyword": "crater"
+    },
+    {
+      "id": 9,
+      "complaint_id": 2,
+      "keyword": "skidding"
+    },
+    {
+      "id": 10,
+      "complaint_id": 2,
+      "keyword": "accident hazard"
+    },
+    {
+      "id": 11,
+      "complaint_id": 3,
+      "keyword": "garbage"
+    },
+    {
+      "id": 12,
+      "complaint_id": 3,
+      "keyword": "overflow"
+    },
+    {
+      "id": 13,
+      "complaint_id": 3,
+      "keyword": "smell"
+    },
+    {
+      "id": 14,
+      "complaint_id": 3,
+      "keyword": "market"
+    },
+    {
+      "id": 15,
+      "complaint_id": 4,
+      "keyword": "water leak"
+    },
+    {
+      "id": 16,
+      "complaint_id": 4,
+      "keyword": "pipeline burst"
+    },
+    {
+      "id": 17,
+      "complaint_id": 4,
+      "keyword": "flooding"
+    },
+    {
+      "id": 18,
+      "complaint_id": 5,
+      "keyword": "manhole"
+    },
+    {
+      "id": 19,
+      "complaint_id": 5,
+      "keyword": "open sewage"
+    },
+    {
+      "id": 20,
+      "complaint_id": 5,
+      "keyword": "school"
+    },
+    {
+      "id": 21,
+      "complaint_id": 6,
+      "keyword": "traffic signal"
+    },
+    {
+      "id": 22,
+      "complaint_id": 6,
+      "keyword": "red light"
+    },
+    {
+      "id": 23,
+      "complaint_id": 6,
+      "keyword": "traffic jam"
+    },
+    {
+      "id": 24,
+      "complaint_id": 7,
+      "keyword": "streetlight"
+    },
+    {
+      "id": 25,
+      "complaint_id": 7,
+      "keyword": "sparking"
+    },
+    {
+      "id": 26,
+      "complaint_id": 8,
+      "keyword": "pothole"
+    },
+    {
+      "id": 27,
+      "complaint_id": 8,
+      "keyword": "road damage"
+    },
+    {
+      "id": 28,
+      "complaint_id": 9,
+      "keyword": "drainage"
+    },
+    {
+      "id": 29,
+      "complaint_id": 9,
+      "keyword": "waste dumping"
+    },
+    {
+      "id": 30,
+      "complaint_id": 10,
+      "keyword": "water leak"
+    },
+    {
+      "id": 31,
+      "complaint_id": 11,
+      "keyword": "traffic signal"
+    },
+    {
+      "id": 32,
+      "complaint_id": 12,
+      "keyword": "park light"
+    },
+    {
+      "id": 33,
+      "complaint_id": 13,
+      "keyword": "garbage pickup"
+    },
+    {
+      "id": 34,
+      "complaint_id": 14,
+      "keyword": "exposed wire"
+    },
+    {
+      "id": 35,
+      "complaint_id": 15,
+      "keyword": "drainage overflow"
+    },
+    {
+      "id": 36,
+      "complaint_id": 16,
+      "keyword": "streetlight"
+    },
+    {
+      "id": 37,
+      "complaint_id": 16,
+      "keyword": "college"
+    },
+    {
+      "id": 38,
+      "complaint_id": 17,
+      "keyword": "streetlight"
+    },
+    {
+      "id": 39,
+      "complaint_id": 17,
+      "keyword": "college"
+    },
+    {
+      "id": 40,
+      "complaint_id": 17,
+      "keyword": "broken"
+    },
+    {
+      "id": 41,
+      "complaint_id": 17,
+      "keyword": "weeks"
+    }
+  ],
+  "complaint_duplicates": [
+    {
+      "id": 1,
+      "complaint_id": 16,
+      "duplicate_complaint_id": 1,
+      "similarity_score": 0.88,
+      "created_at": "2026-09-23T14:20:22.410Z"
+    },
+    {
+      "id": 2,
+      "complaint_id": 17,
+      "duplicate_complaint_id": 1,
+      "similarity_score": 0.79,
+      "created_at": "2026-09-26T16:41:05.030Z"
+    },
+    {
+      "id": 3,
+      "complaint_id": 17,
+      "duplicate_complaint_id": 16,
+      "similarity_score": 0.76,
+      "created_at": "2026-09-26T16:41:05.031Z"
+    },
+    {
+      "id": 4,
+      "complaint_id": 17,
+      "duplicate_complaint_id": 14,
+      "similarity_score": 0.72,
+      "created_at": "2026-09-26T16:41:05.032Z"
+    },
+    {
+      "id": 5,
+      "complaint_id": 17,
+      "duplicate_complaint_id": 7,
+      "similarity_score": 0.63,
+      "created_at": "2026-09-26T16:41:05.033Z"
+    }
+  ],
+  "status_history": [
+    {
+      "id": 1,
+      "complaint_id": 1,
+      "old_status": "REPORTED",
+      "new_status": "AI ANALYZED",
+      "changed_by": null,
+      "notes": "Classified as Infrastructure (Streetlight) with MEDIUM priority by CivicFix AI.",
+      "changed_at": "2026-09-12T14:20:22.410Z"
+    },
+    {
+      "id": 2,
+      "complaint_id": 1,
+      "old_status": "AI ANALYZED",
+      "new_status": "ASSIGNED",
+      "changed_by": 1,
+      "notes": "Assigned to Electrical Department team.",
+      "changed_at": "2026-09-14T14:20:22.410Z"
+    },
+    {
+      "id": 3,
+      "complaint_id": 1,
+      "old_status": "ASSIGNED",
+      "new_status": "IN PROGRESS",
+      "changed_by": 2,
+      "notes": "Work order #EL-894 generated. Technician dispatched.",
+      "changed_at": "2026-09-24T14:20:22.410Z"
+    },
+    {
+      "id": 4,
+      "complaint_id": 2,
+      "old_status": "REPORTED",
+      "new_status": "AI ANALYZED",
+      "changed_by": null,
+      "notes": "Classified as Roads & Infrastructure with HIGH priority.",
+      "changed_at": "2026-09-21T14:20:22.410Z"
+    },
+    {
+      "id": 5,
+      "complaint_id": 2,
+      "old_status": "AI ANALYZED",
+      "new_status": "ASSIGNED",
+      "changed_by": 1,
+      "notes": "Forwarded to road repair quick response squad.",
+      "changed_at": "2026-09-23T14:20:22.410Z"
+    },
+    {
+      "id": 6,
+      "complaint_id": 3,
+      "old_status": "REPORTED",
+      "new_status": "AI ANALYZED",
+      "changed_by": null,
+      "notes": "Classified as Sanitation with MEDIUM priority.",
+      "changed_at": "2026-09-16T14:20:22.410Z"
+    },
+    {
+      "id": 7,
+      "complaint_id": 3,
+      "old_status": "AI ANALYZED",
+      "new_status": "ASSIGNED",
+      "changed_by": 1,
+      "notes": "Assigned to Sanitation Inspector.",
+      "changed_at": "2026-09-18T14:20:22.410Z"
+    },
+    {
+      "id": 8,
+      "complaint_id": 3,
+      "old_status": "ASSIGNED",
+      "new_status": "IN PROGRESS",
+      "changed_by": 1,
+      "notes": "Compactor truck dispatched.",
+      "changed_at": "2026-09-23T14:20:22.410Z"
+    },
+    {
+      "id": 9,
+      "complaint_id": 3,
+      "old_status": "IN PROGRESS",
+      "new_status": "RESOLVED",
+      "changed_by": 1,
+      "notes": "Area cleared, secondary bin installed and sanitized.",
+      "changed_at": "2026-09-25T14:20:22.410Z"
+    },
+    {
+      "id": 10,
+      "complaint_id": 4,
+      "old_status": "REPORTED",
+      "new_status": "AI ANALYZED",
+      "changed_by": null,
+      "notes": "Classified as Water Supply with HIGH priority.",
+      "changed_at": "2026-09-18T14:20:22.410Z"
+    },
+    {
+      "id": 11,
+      "complaint_id": 4,
+      "old_status": "AI ANALYZED",
+      "new_status": "ASSIGNED",
+      "changed_by": 1,
+      "notes": "Emergency valve control dispatched.",
+      "changed_at": "2026-09-19T14:20:22.410Z"
+    },
+    {
+      "id": 12,
+      "complaint_id": 4,
+      "old_status": "ASSIGNED",
+      "new_status": "IN PROGRESS",
+      "changed_by": 1,
+      "notes": "Excavation and pipe replacement in progress.",
+      "changed_at": "2026-09-21T14:20:22.410Z"
+    },
+    {
+      "id": 13,
+      "complaint_id": 4,
+      "old_status": "IN PROGRESS",
+      "new_status": "RESOLVED",
+      "changed_by": 1,
+      "notes": "Burst joint replaced with ductile iron pipe.",
+      "changed_at": "2026-09-23T14:20:22.410Z"
+    },
+    {
+      "id": 14,
+      "complaint_id": 17,
+      "old_status": null,
+      "new_status": "REPORTED",
+      "changed_by": 4,
+      "notes": "Complaint reported by citizen.",
+      "changed_at": "2026-09-26T16:41:05.034Z"
+    },
+    {
+      "id": 15,
+      "complaint_id": 17,
+      "old_status": "REPORTED",
+      "new_status": "AI ANALYZED",
+      "changed_by": null,
+      "notes": "AI Analysis (Local Fallback NLP): Classified as Infrastructure (Streetlight) with MEDIUM priority.",
+      "changed_at": "2026-09-26T16:41:05.034Z"
+    },
+    {
+      "id": 16,
+      "complaint_id": 17,
+      "old_status": "AI ANALYZED",
+      "new_status": "ASSIGNED",
+      "changed_by": null,
+      "notes": "Automatically routed to Electrical Department by CivicFix Department Dispatcher.",
+      "changed_at": "2026-09-26T16:41:05.035Z"
+    },
+    {
+      "id": 17,
+      "complaint_id": 17,
+      "old_status": "ASSIGNED",
+      "new_status": "IN PROGRESS",
+      "changed_by": 1,
+      "notes": "Work order #EL-902 assigned to Central Ward electrical repair squad.",
+      "changed_at": "2026-09-26T16:41:05.133Z"
+    },
+    {
+      "id": 18,
+      "complaint_id": 17,
+      "old_status": "IN PROGRESS",
+      "new_status": "RESOLVED",
+      "changed_by": 1,
+      "notes": "New 80W LED luminaire fixture installed on pole #C-14. Illumination verified.",
+      "changed_at": "2026-09-26T16:41:05.148Z"
+    }
+  ]
+}
