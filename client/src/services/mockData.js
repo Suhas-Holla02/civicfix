@@ -1,7 +1,4 @@
 // Fallback client-side data engine for static Vercel / Netlify deployments
-import { routeToDepartment } from '../../../server/services/routingService.js';
-import { fallbackLocalAI } from '../../../server/services/aiService.js';
-import { detectDuplicates } from '../../../server/services/duplicateDetector.js';
 
 const STORAGE_KEY = 'civicfix_client_db';
 
