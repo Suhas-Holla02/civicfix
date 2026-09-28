@@ -1,8 +1,7 @@
 // CivicFix API Client Service with Automatic Static Vercel Resilience
 import { getClientStore, saveClientStore } from './mockData.js';
-import { fallbackLocalAI } from '../../../server/services/aiService.js';
-import { detectDuplicates } from '../../../server/services/duplicateDetector.js';
-
+import { fallbackLocalAI } from './localAI.js';
+import { detectDuplicates } from './duplicateDetector.js';
 const API_BASE = '/api';
 
 export function getAuthToken() {
